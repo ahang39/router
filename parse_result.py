@@ -45,6 +45,10 @@ def parse_csv(csv_path):
             if float(loss) > 0:
                 continue
 
+            # 跳过速度低于 10MB/s 的
+            if float(speed) < 10:
+                continue
+
             region_cn = REGION_MAP.get(region, region)
             latency_int = round(float(latency))
             speed_int = round(float(speed))
