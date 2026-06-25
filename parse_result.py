@@ -34,7 +34,7 @@ REGION_MAP = {
 # 目标地区（优先级从高到低）
 TARGET_REGIONS = ["NRT", "KIX", "HKG", "SIN", "ICN", "SJC", "LAX", "SEA"]
 
-MIN_SPEED = 5       # MB/s
+MIN_SPEED = 0       # 不限速度
 MIN_PER_REGION = 3  # 每个地区至少保留数量
 
 
