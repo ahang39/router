@@ -10,7 +10,7 @@ unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY all_proxy
 # 1. 运行 cfst（静默，只输出最终结果）
 cd /opt/data/tools/CloudflareSpeedTest
 env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY -u all_proxy \
-  ./cfst -httping -n 100 -dn 20 -dt 10 -tl 600 -p 0 -o "$SCRIPT_DIR/latest.csv" > /dev/null 2>&1
+  ./cfst -httping -n 100 -dn 20 -dt 10 -tl 600 -sl 0 -p 0 -o "$SCRIPT_DIR/latest.csv" > /dev/null 2>&1
 
 # 2. 解析结果，生成 all.txt
 $PYTHON "$SCRIPT_DIR/parse_result.py" 2>&1
