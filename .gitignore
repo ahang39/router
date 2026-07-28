@@ -1,5 +1,7 @@
 latest-trial.csv
 result_*.csv
+stage-*.csv
+stage-*.ips
 *.pyc
 __pycache__/
 .DS_Store
