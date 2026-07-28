@@ -31,10 +31,24 @@ REGION_MAP = {
     "MAD": "西班牙马德里",
 }
 
-TARGET_REGIONS = ["NRT", "KIX", "HKG", "SIN", "ICN", "SJC", "LAX", "SEA"]
+# 优先亚太多出口；欧/美作回退（电信路径常先落到 AMS 等）
+TARGET_REGIONS = [
+    "NRT",
+    "KIX",
+    "HKG",
+    "SIN",
+    "ICN",
+    "SJC",
+    "LAX",
+    "SEA",
+    "AMS",
+    "FRA",
+]
 
 MIN_SPEED = 0
 MIN_PER_REGION = 3
+# 目标地区都空时，按速度取全局 Top（避免 all.txt 断更）
+FALLBACK_GLOBAL_TOP = 10
 
 
 def parse_csv(csv_path):
@@ -58,6 +72,13 @@ def parse_csv(csv_path):
     return regions
 
 
+def _format_line(item):
+    region_cn = REGION_MAP.get(item["region"], item["region"])
+    latency_int = round(item["latency"])
+    speed_int = round(item["speed"])
+    return f"{item['ip']}:443#{region_cn}|{latency_int}ms|{speed_int}MB/s"
+
+
 def select_top(regions_data):
     result_lines = []
     for region_code in TARGET_REGIONS:
@@ -74,12 +95,20 @@ def select_top(regions_data):
                     filtered.append(x)
                     seen.add(x["ip"])
         selected = filtered[:MIN_PER_REGION]
-        region_cn = REGION_MAP.get(region_code, region_code)
         for item in selected:
-            latency_int = round(item["latency"])
-            speed_int = round(item["speed"])
-            line = f"{item['ip']}:443#{region_cn}|{latency_int}ms|{speed_int}MB/s"
-            result_lines.append(line)
+            result_lines.append(_format_line(item))
+
+    if result_lines:
+        return result_lines
+
+    # 无目标地区命中：全局按速度取 Top，保证 all.txt 有可用结果
+    all_items = []
+    for items in regions_data.values():
+        all_items.extend(items)
+    all_items = [x for x in all_items if x["latency"] <= 600 and x["speed"] >= MIN_SPEED]
+    all_items.sort(key=lambda x: -x["speed"])
+    for item in all_items[:FALLBACK_GLOBAL_TOP]:
+        result_lines.append(_format_line(item))
     return result_lines
 
 
