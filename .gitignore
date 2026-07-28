@@ -1,0 +1,5 @@
+latest-trial.csv
+result_*.csv
+*.pyc
+__pycache__/
+.DS_Store
