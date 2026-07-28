@@ -1,13 +1,14 @@
-上海电信 CF 优选 IP，每日更新。
+# router
+
+上海电信 CF 优选 IP（**仅数据**）。
 
 ```text
 https://raw.githubusercontent.com/ahang39/router/refs/heads/main/all.txt
 ```
 
-测速流程（`run.sh` / hermes `cf_speedtest.sh`）：
+| 文件 | 说明 |
+|------|------|
+| `all.txt` | edgetunnel 自定义优选列表 |
+| `latest.csv` | 最近一次完整测速表 |
 
-1. **TCPing** 全量粗筛（不 HTTP）
-2. **HTTPing** TopN @ 公共 URL（默认 `speed.cloudflare.com`，延迟 + 地区码）
-3. **下载** Top dn @ 自建 `https://cfst.huaduo.de/url`（几乎只在这步消耗 Worker 请求）
-
-常用环境变量：`CFST_URL`、`CFST_HTTP_URL`、`CFST_HTTP_TOP`、`CFST_DN`、`CFST_SL`。
+生成逻辑在本机 `~/dev/repos/cf-prefer`，由 hermes 日更调用；本仓不放脚本。

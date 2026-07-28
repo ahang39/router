@@ -1,7 +1,5 @@
-latest-trial.csv
-result_*.csv
-stage-*.csv
-stage-*.ips
-*.pyc
-__pycache__/
-.DS_Store
+*
+!all.txt
+!latest.csv
+!README.md
+!.gitignore
