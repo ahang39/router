@@ -1,0 +1,3 @@
+# Shadowrocket custom PROXY rules
+# Imported with RULE-SET,...,PROXY
+DOMAIN-SUFFIX,linux.do

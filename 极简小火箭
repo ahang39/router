@@ -1,11 +1,8 @@
-# Shadowrocket: 2026-08-18 12:06:53
+# Shadowrocket: 2026-09-13
 [Rule]
-DOMAIN-SUFFIX,linux.do,PROXY
-DOMAIN-SUFFIX,idcflare.com,PROXY
-DOMAIN-SUFFIX,nodeseek.com,PROXY
+RULE-SET,https://fastly.jsdelivr.net/gh/ahang39/router@main/shadowrocket-custom-direct.list,DIRECT
+RULE-SET,https://fastly.jsdelivr.net/gh/ahang39/router@main/shadowrocket-custom-proxy.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Telegram/Telegram.list,PROXY
-RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Google/Google.list,PROXY
-RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/YouTube/YouTube.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/OpenAI/OpenAI.list,PROXY
-RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/ProxyLite/ProxyLite.list,PROXY
+RULE-SET,https://fastly.jsdelivr.net/gh/Repcz/Tool@X/Shadowrocket/Rules/ProxyGFW.list,PROXY
 FINAL,DIRECT
