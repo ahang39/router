@@ -1,6 +1,8 @@
 # Shadowrocket: 2026-08-18 12:06:53
 [Rule]
 DOMAIN-SUFFIX,linux.do,PROXY
+DOMAIN-SUFFIX,idcflare.com,PROXY
+DOMAIN-SUFFIX,nodeseek.com,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Telegram/Telegram.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Google/Google.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/YouTube/YouTube.list,PROXY
