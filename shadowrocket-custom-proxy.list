@@ -20,6 +20,9 @@ DOMAIN-SUFFIX,sentry.io
 
 # Meta Muse AI
 # Official Muse entry: https://ai.meta.com/muse/
-# meta.com covers ai.meta.com and other Meta-owned subdomains used by Muse.
+# Muse is also served directly from muse.ai; auth/model API hosts are explicit for troubleshooting.
+DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,meta.ai
+DOMAIN,auth.meta.com
+DOMAIN,api.meta.ai
