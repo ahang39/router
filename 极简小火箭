@@ -4,5 +4,6 @@ RULE-SET,https://fastly.jsdelivr.net/gh/ahang39/router@main/shadowrocket-custom-
 RULE-SET,https://fastly.jsdelivr.net/gh/ahang39/router@main/shadowrocket-custom-direct.list,DIRECT
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Telegram/Telegram.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/OpenAI/OpenAI.list,PROXY
+RULE-SET,https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Facebook/Facebook.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/Repcz/Tool@X/Shadowrocket/Rules/ProxyGFW.list,PROXY
 FINAL,DIRECT

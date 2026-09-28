@@ -17,3 +17,9 @@ DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,http-intake.logs.us5.datadoghq.com
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN-SUFFIX,sentry.io
+
+# Meta Muse AI
+# Official Muse entry: https://ai.meta.com/muse/
+# meta.com covers ai.meta.com and other Meta-owned subdomains used by Muse.
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,meta.ai
