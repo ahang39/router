@@ -28,5 +28,7 @@ DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metaaiusercontent.com
 DOMAIN-SUFFIX,ecto1usercontent.com
 DOMAIN-SUFFIX,meta-agents-apps.workers.dev
+DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
 DOMAIN,auth.meta.com
 DOMAIN,api.meta.ai
