@@ -22,7 +22,11 @@ DOMAIN-SUFFIX,sentry.io
 # Official Muse entry: https://ai.meta.com/muse/
 # Muse is also served directly from muse.ai; auth/model API hosts are explicit for troubleshooting.
 DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
+DOMAIN-SUFFIX,meta-agents-apps.workers.dev
 DOMAIN,auth.meta.com
 DOMAIN,api.meta.ai
