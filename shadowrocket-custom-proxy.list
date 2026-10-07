@@ -32,3 +32,92 @@ DOMAIN,meta-ohttp-config-prod.fastly-edge.com
 DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
 DOMAIN,auth.meta.com
 DOMAIN,api.meta.ai
+
+# Plasma One
+# Official website / app / Plasma chain RPC & explorer
+DOMAIN-SUFFIX,plasma.org
+DOMAIN-SUFFIX,plasma.to
+DOMAIN-SUFFIX,plasmascan.to
+
+# Plasma One core providers
+# Privy: wallet / authentication
+DOMAIN-SUFFIX,privy.io
+# Bridge: global account / fiat on-off ramp
+DOMAIN-SUFFIX,bridge.xyz
+# Rain: card issuing / card API
+DOMAIN-SUFFIX,rain.xyz
+DOMAIN-SUFFIX,raincards.xyz
+# Sumsub: KYC / identity verification
+DOMAIN-SUFFIX,sumsub.com
+# Veda: Earn vault infrastructure
+DOMAIN-SUFFIX,veda.tech
+# 0x: swap routing
+DOMAIN-SUFFIX,0x.org
+
+# Finance apps shown on iPhone
+
+# Bybit
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybitglobal.com
+DOMAIN-SUFFIX,bybit-global.com
+DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,bytick.com
+DOMAIN-SUFFIX,byapis.com
+DOMAIN-SUFFIX,bycbe.com
+DOMAIN-SUFFIX,byapps.net
+DOMAIN-SUFFIX,bymj.io
+DOMAIN-SUFFIX,byabcde.com
+DOMAIN-SUFFIX,byd3c3.com
+DOMAIN-SUFFIX,bybdc6.com
+
+# Binance
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnbzh.ac
+
+# Neverless
+DOMAIN-SUFFIX,neverless.com
+DOMAIN-SUFFIX,neverless.wtf
+
+# Kraken / Krak
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,krak.app
+
+# iFAST Global Bank
+DOMAIN-SUFFIX,ifastgb.com
+
+# Wise / legacy TransferWise
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+
+# Charles Schwab
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabcdn.com
+
+# Interactive Brokers / IBKR
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,ibkr.com
+
+# Firstrade official domains
+DOMAIN-SUFFIX,firstrade.com
+DOMAIN-SUFFIX,firstrade.info
+
+# Firstrade related account-linking / clearing / e-document services
+DOMAIN-SUFFIX,plaid.com
+DOMAIN-SUFFIX,apexclearing.com
+DOMAIN-SUFFIX,apexfintechsolutions.com
+DOMAIN-SUFFIX,proxyvote.com
+DOMAIN-SUFFIX,icsdelivery.com
+DOMAIN-SUFFIX,investordelivery.com
+DOMAIN-SUFFIX,documentmailbox.com
+DOMAIN-SUFFIX,isecurus.com
